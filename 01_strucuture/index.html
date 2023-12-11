@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2</title>
+    <link rel="stylesheet" href="css/normalize.css"> <!-- Normalize est toujours en premier-->
+    <link rel="stylesheet" href="css/navigation.css"> <!-- Les fichiers -->
+    <link rel="stylesheet" href="css/horaire.css">
+    <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="stylesheet" href="css/galerie.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- feuille de style -->
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Kalam&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="entete"> <!-- Pour avoir toute la largeur de la fenêtre -->
+        <header class="entete">
+            <!-- logo -->
+            <img class="logo" src="images/logo.png" alt="logo">
+            <img src="" alt="">
+            <h1>Portefolio Alicia Sau</h1>
+            <!--
+                 id peut être utilisée une seule fois das le document
+                La même classe peut être utiliser plusieurs fois
+            -->
+            <input type="checkbox" id="chk_burger">
+            <!-- https://svgbox.net/ -->
+            <label for="chk_burger" id="burger">
+                <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32">
+            </label>
+
+            <nav class="entete_nav">
+                <button class="search"><img src="https://s2.svgbox.net/octicons.svg?ic=search-bold&color=000" width="32" height="32"></button> <!-- search -->
+                <button class="panier"><img src="https://s2.svgbox.net/materialui.svg?ic=person&color=000" width="32" height="32"></button> <!-- About me-->
+                <button class="wishlist"><img src="https://s2.svgbox.net/materialui.svg?ic=work&color=000" width="32" height="32"></button> <!-- Hiring-->
+            </nav>
+
+            <nav class="navigation">
+            <a href="#accueil">Accueil</a>
+            <a href="#horaire">Horaire</a>
+            <a href="#inscription">Inscription</a>
+            <a href="#video">Vidéo</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#contact">Contact</a>
+            </nav>
+        </header>
+    </div>
+    
+
+    <div>
+        <section id="accueil">
+            <h2>TP2 - Mon portefolio</h2>
+            <h3> Alicia Sau </h3>
+            <ul>
+                <li>582-1W1 - Mise en page Web</li>
+                <li>Techniques d'intégration multimédia</li>
+                <li>Collège de Maisonneuve</li>
+                <li>https://github.com/Sau-Al/1w1-gr4</li>
+                <li>Automne 2023</li>
+            </ul>
+        </section>
+        
+    </div>
+    <div>
+        <section id="horaire">
+            <!-- conteneur principal du tableau -->
+    <table class="horaire">
+        <caption>Horaire session A2023</caption>
+        <tr>
+            <th> </th> <!--la première cellule est vide-->
+            <th>LUNDI</th>
+            <th>MARDI</th>
+            <th>MERCREDI</th>
+            <th>JEUDI</th>
+            <th>VENDREDI</th>
+            <th>SAMEDI</th>
+            <th>DIMANCHE</th>
+        </tr>
+        <!-- pour chacune des lignes suivantes le th contient l'heure de début du cours-->
+        <tr>
+            <th>8h</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="cours">1W1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>9h</th>
+            <td class="cours">1W1</td>
+            <td class="graph">1M2</td>
+            <td></td>
+            <td class="cours">1W1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>10h</th>
+            <td class="cours">1W1</td>
+            <td class="graph">1M2</td>
+            <td></td>
+            <td class="french">103</td>
+            <td class="vid">1M1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>11h</th>
+            <td class="cours">1W1</td>
+            <td class="graph">1M2</td>
+            <td class="anime">1J1</td>
+            <td class="french">103</td>
+            <td class="vid">1M1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>12h</th>
+            <td></td>
+            <td></td>
+            <td class="anime">1J1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>13h</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>14h</th>
+            <td class="french">103</td>
+            <td></td>
+            <td class="vid">1M1</td>
+            <td class="graph">1M2</td>
+            <td class="anime">1J1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>15h</th>
+            <td class="french">103</td>
+            <td></td>
+            <td class="vid">1M1</td>
+            <td class="graph">1M2</td>
+            <td class="anime">1J1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>16h</th>
+            <td></td>
+            <td></td>
+            <td class="vid">1M1</td>
+            <td class="graph">1M2</td>
+            <td class="anime">1J1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>17h</th>
+            <td></td>
+            <td></td>
+            <td class="vid">1M1</td>
+            <td class="graph">1M2</td>
+            <td class="anime">1J1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>18h</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+        </section>
+        
+    </div>
+    
+
+            <div>
+                <section id="galerie">
+                    <h2>Galerie</h2>
+                    <div class="slider">
+  
+                        <a href="#slide-1">1</a>
+                        <a href="#slide-2">2</a>
+                        <a href="#slide-3">3</a>
+                        <a href="#slide-4">4</a>
+                        <a href="#slide-5">5</a>
+                      
+                        <div class="slides">
+                          <div id="slide-1">
+                            1
+                          </div>
+                          <div id="slide-2">
+                            2
+                          </div>
+                          <div id="slide-3">
+                            3
+                          </div>
+                          <div id="slide-4">
+                            4
+                          </div>
+                          <div id="slide-5">
+                            5
+                          </div>
+                        </div>
+                      </div>
+                </section>
+
+                </section>
+            </div>
+
+            <div>
+                <section id="video">
+                    <h2>Video</h2>
+                    <h3>Projet réalisés en <b>Création vidéo</b> dans la session d'auomne 2023</h3>
+                    <video src="  "></video>
+                </section>
+            </div>
+
+            <div>
+                <section id="inscription">
+                    <h2>Inscription</h2>   
+        
+                    <div class="formulaire_inscription">
+                        <form action="" class="formulaire">
+                            <input type="text" placeholder="Nom" class="name">
+                            <input type="text" placeholder="Prénom" class="name">
+                            <input type="text" placeholder="Numéro de téléphone" class="name">
+                            <input type="email" placeholder="Email" class="email">
+                            
+                        <fieldset>
+                            <legend>Langage</legend>
+                        <label class="chk_html">HTML <input id= "chk_html" type="checkbox" id=""></label>
+                        <label class="">CSS <input type="checkbox" id="" ></label>
+                        <label class="">JSS <input type="checkbox" id="" ></label> 
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Age</legend>
+                    <label class="chk_html">18-20 <input type="radio" name= "check" id=""></label>
+                    <label class="">21-30 <input type="radio" name= "check" id="" ></label>
+                    <label class="">31-40 <input type="radio" name= "check" id="" ></label> 
+                    </fieldset>
+                    <button type="submit" class="button">S'incrire</button>
+                    <button type="submit" class="button">Me connecter</button>
+                    </form>
+                </section>
+                    </div>
+        
+    </div>
+    <div>
+        <footer id="contact">
+            <section class="pied__contact">
+                <h3>Contact</h3>
+                <ul>
+                  <li>3800 Sherbrooke est</li>
+                  <li>Montréal, QC</li>
+                  <li>H1X 2A2</li>
+                </ul>
+              </section>
+
+              <section class="pied__sociaux">
+                <h3>Réseaux sociaux</h3>
+                <img src="images/facebook.png" alt="facebook">
+                <img src="images/instagram.png" alt="insta">
+                <img src="images/youtube.png" alt="youtube">
+              </section>
+
+              <section class="pied__adresse">
+                <h3>Adresse</h3>
+                <ul>
+                  <li>3800 Sherbrooke est</li>
+                  <li>Montréal, QC</li>
+                  <li>H1X 2A2</li>
+                </ul>
+              </section>
+
+              <section class="avis">
+                <h3>Avis de confidentialité | Privacy Notice</h3>
+              </section>
+
+        </footer>
+    </div>
+</body>
+</html>

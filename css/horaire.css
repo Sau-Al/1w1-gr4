@@ -1,0 +1,57 @@
+section#horaire{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+    
+table{
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 10px;
+}
+
+table, th, td {
+    border: 10px solid black;
+    padding: 5px;
+  }
+
+th{
+    background-color: aliceblue;
+}
+
+table{
+    width: 700px;
+    height: 700px;
+    font-size: larger;
+}
+
+.cours{
+    border: 10px solid purple;
+    background-color: rgb(165, 73, 165);
+}
+
+.french{
+    border: 10px solid rgb(0, 128, 128);
+    background-color: rgb(73, 128, 165);
+}
+
+.graph{
+    border: 10px solid rgb(128, 0, 6);
+    background-color: rgb(165, 73, 93);
+    
+}
+
+.anime{
+    border: 10px solid rgb(0, 128, 64);
+    background-color: rgb(73, 165, 81);
+}
+
+.vid{
+    border: 10px solid orange;
+    background-color: rgb(233, 191, 3);
+}

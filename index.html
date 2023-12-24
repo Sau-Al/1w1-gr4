@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP2</title>
+    <title>Portefolio</title>
     <link rel="stylesheet" href="css/normalize.css"> <!-- Normalize est toujours en premier-->
     <link rel="stylesheet" href="css/navigation.css"> <!-- Les fichiers -->
+    <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="css/article.css">
     <link rel="stylesheet" href="css/horaire.css">
     <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="stylesheet" href="css/galerie.css">
+    <link rel="stylesheet" href="css/video.css">
     <link rel="stylesheet" href="css/style.css"> <!-- feuille de style -->
     
     <!-- Google fonts -->
@@ -22,12 +26,15 @@
         <header class="entete">
             <!-- logo -->
             <img class="logo" src="images/logo.png" alt="logo">
-            <img src="" alt="">
-            <h1>Travail pratique 2</h1>
+            <h1>Portefolio Alicia Sau</h1>
             <!--
                  id peut être utilisée une seule fois das le document
                 La même classe peut être utiliser plusieurs fois
             -->
+            <form class="entete__form">
+                <input type="search" id="recherche" placeholder="Rechercher">
+            </form>
+              
             <input type="checkbox" id="chk_burger">
             <!-- https://svgbox.net/ -->
             <label for="chk_burger" id="burger">
@@ -42,30 +49,78 @@
 
             <nav class="navigation">
             <a href="#accueil">Accueil</a>
+            <a href="#article">Article</a>
             <a href="#horaire">Horaire</a>
             <a href="#inscription">Inscription</a>
             <a href="#video">Vidéo</a>
             <a href="#galerie">Galerie</a>
             <a href="#contact">Contact</a>
             </nav>
+            
         </header>
     </div>
-    
 
     <div>
         <section id="accueil">
-            <h2>TP2 - titre du site</h2>
-            <h3> Alicia Sau </h3>
+            <div class="texte">
+            <h2>Bienvenu! Voici mon TP2 - Mon portefolio</h2>
+            <h3>À propos de moi</h3>
             <ul>
                 <li>582-1W1 - Mise en page Web</li>
-                <li>Techniques d'intégration multimédia</li>
-                <li>Collège de Maisonneuve</li>
-                <li>Adresse de la Github-page</li>
-                <li>Automne 2023</li>
+                <li>💻 - Techniques d'intégration multimédia</li>
+                <li>🏫 - Collège de Maisonneuve</li>
+                <li>Session Automne 2023</li>
             </ul>
-        </section>
+            <a href="https://github.com/Sau-Al" target="_blank">Visitez mon Github!</a>
+        </div>
+            <div class="img_perso">
+            <figure class="personnage">
+            <img class="personnage" src="images/personnage.png" alt="personnage">
+            <figcaption>Alicia Sau</figcaption>
+            </figure>
+            </div>
+    </section>
         
     </div>
+
+    <div>
+        <section id="article"> 
+          <article class="article">
+            <section class="article__section">
+              
+               <div class="text"> 
+                <h2>Projets personnels</h2>
+              <h3>Animations</h3>
+              <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita labore ullam ea! Porro, laudantium nisi. Sequi similique nihil sed nesciunt. Corporis accusantium doloribus fuga similique dicta dolor asperiores perspiciatis ad.</p>
+              <h3>Dessins</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptas facilis nam in vitae numquam iste error quibusdam, possimus dolor quo minima, quisquam quaerat temporibus sit suscipit natus dolore cupiditate?</p>
+              <h3>Création d'un personnage avec capture mouvement réel</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptas facilis nam in vitae numquam iste error quibusdam, possimus dolor quo minima, quisquam quaerat temporibus sit suscipit natus dolore cupiditate?</p>
+              <h3>Programmes + outils que j'utilise</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptas facilis nam in vitae numquam iste error quibusdam, possimus dolor quo minima, quisquam quaerat temporibus sit suscipit natus dolore cupiditate?</p>
+
+            </div>
+              <div class="img_logo_app">
+                <figure class="article__figure">
+                <img class="procreate" src="images/procreate.jpg" alt="logo procreate" width="200" height="200">
+                <figcaption>Procreate</figcaption>
+                </figure>
+                <figure class="article__figure">
+                    <img class="procreate" src="images/Adobe_Photoshop.png" alt="logo photoshop" width="200" height="200">
+                    <figcaption>Photoshop</figcaption>
+                    </figure>
+                    <figure class="article__figure">
+                        <img class="procreate" src="images/Adobe_Premiere_Pro.png" alt="logo premier" width="200" height="200">
+                        <figcaption>Premier Pro</figcaption>
+                        </figure>
+                </div>
+              
+              <figure class="article__figure_pingouin">
+                <img src="images/animation_pingouin.GIF" alt="pingouin" width="400" height="300">
+              </figure>
+            </section>
+    </div>
+
     <div>
         <section id="horaire">
             <!-- conteneur principal du tableau -->
@@ -196,59 +251,110 @@
         </section>
         
     </div>
-    <div>
-        <section id="inscription">
-            <h2>Inscription</h2>   
-
-            <div class="formulaire_inscription">
-                <form action="" class="formulaire">
-                    <input type="text" placeholder="Nom" class="name">
-                    <input type="text" placeholder="Prénom" class="name">
-                    <input type="text" placeholder="Numéro de téléphone" class="name">
-                    <input type="email" placeholder="Email" class="email">
-                    
-                <fieldset>
-                    <legend>Langage</legend>
-                <label class="chk_html">HTML <input id= "chk_html" type="checkbox" id=""></label>
-                <label class="">CSS <input type="checkbox" id="" ></label>
-                <label class="">JSS <input type="checkbox" id="" ></label> 
-            </fieldset>
-
-            <fieldset>
-                <legend>Age</legend>
-            <label class="chk_html">18-20 <input type="radio" name= "check" id=""></label>
-            <label class="">21-30 <input type="radio" name= "check" id="" ></label>
-            <label class="">31-40 <input type="radio" name= "check" id="" ></label> 
-            </fieldset>
-            <button type="submit" class="button">S'incrire</button>
-            <button type="submit" class="button">Me connecter</button>
-            </form>
-        </section>
-            </div>
+    
 
             <div>
                 <section id="galerie">
                     <h2>Galerie</h2>
-                </section>
+                    <h3>Voici quelques dessins que j'ai dessinés</h3>
+                    <div class="galerie">
+                    <div class="gallery">
+                          <img src="images/dessin_graduation.PNG" alt="gradutation" width="600" height="200">
+                        </a>
+                        <div class="desc">Graduation du secondaire</div>
+                      </div>
+                      
+                      <div class="gallery">
+                          <img src="images/dessin_prom.PNG" alt="amis" width="600" height="400">
+                        </a>
+                        <div class="desc">Soirée prom - fin secondaire</div>
+                      </div>
+                      
+                      <div class="gallery">
+                          <img src="images/dessin_amis.PNG" alt="Northern Lights" width="600" height="200">
+                        </a>
+                        <div class="desc">Mes amis</div>
+                      </div>
+                      
+                      <div class="gallery">
+                          <img src="images/dessin_portrait.PNG" alt="Mountains" width="600" height="200">
+                        </a>
+                        <div class="desc">Un portrait</div>
+                      </div>
+
+                      <div class="gallery">
+                        <img src="images/dessin_chibi.PNG" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">Un chibi qui joue avec l'ordi</div>
+                    </div>
+                </div>
+            </section>
             </div>
 
             <div>
                 <section id="video">
-                    <h2>Video</h2>
-                </section>
+                    <h2>Vidéo</h2>
+                    <h3>Projet réalisés en <b>Création vidéo</b> dans la session d'automne 2023</h3>
+                    <video width="1100" height="600" controls>
+                        <source src="images/Sau_Alicia_TP1.mp4" type=video/mp4>
+                    </video>
+                    <div class="video_resumer">
+                    <h3>Résumer</h3>
+                    <p>Un chaton utilise son talent artistique pour démontrer ses émotions envers son entourage. 
+                    Un beau jour, il prend son courage à deux mains et apporte un dessin à une personne pour lui demander d’être son ami. 
+                    Cependant, celui-ci se moque de son dessin et n’accepte pas sa demande. Le cœur brisé, le chaton ne veut plus essayer de dessiner et jette son dessin. 
+                    Un pingouin retrouve le papier et le redonne au chat. Voyant celui-ci triste, il lui donne un poisson pour lui remonter le moral. Les deux deviennent amis. 
+                    Le chat, ému de la gentillesse du pingouin, rentre à la maison et fait un nouveau dessin pour son nouveau compagnon. </p>
+                    </div>
+                    <div class="video_youtube"><h2>Pour ceux qui sont intéressés à apprendre comment animer</h2>
+                    <center><a class="ytp-title-link yt-uix-sessionlink" target="_blank" data-sessionlink="feature=player-title" tabindex="0" href="https://www.youtube.com/watch?v=by0mgCAgqUA">How to make an animation</a></center>
+                    </div>
+                    </section>
             </div>
+
+            <div>
+                <section id="inscription">
+                    <h2>Inscription</h2>   
+        
+                    <div class="formulaire_inscription">
+                        <form action="" class="formulaire">
+                            <input type="text" placeholder="Nom" class="name">
+                            <input type="text" placeholder="Prénom" class="name">
+                            <input type="text" placeholder="Numéro de téléphone" class="name">
+                            <input type="email" placeholder="Email" class="email">
+                            
+                        <fieldset>
+                            <legend>Langage</legend>
+                        <label class="chk_html">HTML <input id= "chk_html" type="checkbox" id=""></label>
+                        <label class="">CSS <input type="checkbox" id="" ></label>
+                        <label class="">JSS <input type="checkbox" id="" ></label> 
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Age</legend>
+                    <label class="chk_html">18-20 <input type="radio" name= "check" id=""></label>
+                    <label class="">21-30 <input type="radio" name= "check" id="" ></label>
+                    <label class="">31-40 <input type="radio" name= "check" id="" ></label> 
+                    </fieldset>
+                    <button type="submit" class="button">S'incrire</button>
+                    <button type="submit" class="button">Me connecter</button>
+                    </form>
+                </section>
+                    </div>
         
     </div>
     <div>
         <footer id="contact">
-            <section class="pied__contact">
-                <h3>Contact</h3>
-                <ul>
-                  <li>3800 Sherbrooke est</li>
-                  <li>Montréal, QC</li>
-                  <li>H1X 2A2</li>
-                </ul>
-              </section>
+
+            <section class="pied__liens">
+                <div class="liens">
+                <h3>Liens importants</h3>
+                <a href="https://www.cmaisonneuve.qc.ca/" target="_blank">Site Collège de Maisonneuve</a>
+                <a href="https://cmaisonneuve.omnivox.ca/intr/" target="_blank">Omnivox Collège de Maisonneuve</a>
+                </div>
+                
+                
+            </section>
 
               <section class="pied__sociaux">
                 <h3>Réseaux sociaux</h3>
@@ -265,6 +371,19 @@
                   <li>H1X 2A2</li>
                 </ul>
               </section>
+
+            </section>
+            <section class="pied__resume">
+              <h3>Description du département</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil
+                ipsam rerum aliquid officiis! Nihil hic illum nemo soluta iure
+                possimus reiciendis deserunt. Magni impedit sint harum corporis quia
+                culpa. ipsam rerum aliquid officiis! Nihil hic illum nemo soluta iure
+                possimus reiciendis deserunt. Magni impedit sint harum corporis quia
+                culpa
+              </p>
+            </section>
 
               <section class="avis">
                 <h3>Avis de confidentialité | Privacy Notice</h3>

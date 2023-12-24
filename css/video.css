@@ -1,0 +1,28 @@
+section#video {
+    flex-flow: column;
+}
+
+video{
+    align-self: center;
+}
+
+.video_resumer{
+    padding-top: 25px;
+}
+
+.video_resumer p{
+    padding: 25px;
+}
+
+#video h2,#video h3{
+    color: #6d5198;
+    padding-left: 25px;
+}
+
+.ytp-title-link.yt-uix-sessionlink{
+    font-size: 25px;
+}
+
+.video_youtube{
+    padding-bottom: 25px;
+}

@@ -1,0 +1,34 @@
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 250px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+section#galerie h2,h3{
+  color: rgb(109, 81, 152);
+}
+
+section#galerie h3{
+  padding-bottom: 25px;
+}
+
+section#galerie{
+  flex-flow: column;
+  padding: 25px;
+}

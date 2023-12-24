@@ -1,0 +1,41 @@
+#article h2, article p{
+    padding: 25px;
+}
+
+#article h2{
+    color: #6d5198;;
+}
+
+#article h3{
+    padding-left: 25px;
+}
+
+.procreate {
+    border-radius: 25px;
+}
+
+.article__figure{
+    padding-right: 25px;
+}
+
+.img_logo_app{
+    display: flex;
+    flex-flow: column;
+}
+
+.text{
+    display: flex;
+    flex-flow: column;
+    flex: 1 0 50%;
+}
+
+.article__section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article__figure_pingouin{
+    display: flex;
+    justify-content: center;
+    flex: 1 0 auto;
+}
